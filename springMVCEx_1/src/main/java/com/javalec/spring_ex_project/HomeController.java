@@ -32,7 +32,7 @@ public class HomeController {
 		
 		String formattedDate = dateFormat.format(date);
 		
-		model.addAttribute("serverTime", formattedDate );
+		model.addAttribute("serverTime", formattedDate ); // jsp로 넘길 속성 지정
 		
 		return "home"; // view페이지의 이름을 던짐
 	}
